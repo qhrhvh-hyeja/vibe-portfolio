@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 - 김진오</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 헤더 및 네비게이션 -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="#home">Jin</a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">홈</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">소개</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">프로젝트</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">기술</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">연락처</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 홈 섹션 -->
+        <section id="home" class="home">
+            <div class="container">
+                <div class="home-content">
+                    <h1 class="home-title">
+                        안녕하세요, 저는 <span class="highlight">김진오</span>입니다.
+                    </h1>
+                    <p class="home-subtitle">
+                        프론트엔드 개발자 | 웹 디자이너 | 크리에이티브 개발자
+                    </p>
+                    <p class="home-description">
+                        사용자 중심의 디자인과 현대적인 웹 기술을 결합하여 멋진 디지털 경험을 만들어냅니다.
+                    </p>
+                    <div class="home-buttons">
+                        <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+                        <a href="#contact" class="btn btn-secondary">연락하기</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:your.email@example.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 소개 섹션 -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">소개</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            저는 사용자 경험을 최우선으로 생각하는 프론트엔드 개발자입니다. 
+                            깔끔한 코드와 현대적인 디자인을 통해 사용자에게 최고의 웹 경험을 제공하는 것을 목표로 합니다.
+                        </p>
+                        <p>
+                            3년간의 웹 개발 경험을 통해 React, Vue.js, TypeScript 등 다양한 기술 스택을 다뤄왔으며, 
+                            반응형 웹 디자인과 성능 최적화에 깊은 이해를 가지고 있습니다.
+                        </p>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <i class="fas fa-user"></i>
+                                <span>김진오</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>서울, 대한민국</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>컴퓨터공학 학사</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 프로젝트 섹션 -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">프로젝트</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">이커머스 플랫폼</h3>
+                            <p class="project-description">
+                                React와 Node.js를 사용한 현대적인 온라인 쇼핑 플랫폼입니다. 
+                                실시간 재고 관리, 결제 시스템, 사용자 인증 등 다양한 기능을 구현했습니다.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> 라이브 데모
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">태스크 관리 앱</h3>
+                            <p class="project-description">
+                                Vue.js와 Firebase를 활용한 실시간 협업 태스크 관리 애플리케이션입니다. 
+                                드래그 앤 드롭, 실시간 동기화, 팀 협업 기능을 제공합니다.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Vuex</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> 라이브 데모
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">데이터 대시보드</h3>
+                            <p class="project-description">
+                                D3.js와 Chart.js를 사용한 인터랙티브 데이터 시각화 대시보드입니다. 
+                                실시간 데이터 업데이트와 다양한 차트 타입을 지원합니다.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Chart.js</span>
+                                <span class="tech-tag">Express</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> 라이브 데모
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 기술 스택 섹션 -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">기술 스택</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-title">프론트엔드</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-vuejs"></i>
+                                <span>Vue.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-sass"></i>
+                                <span>Sass</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-title">백엔드</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-fire"></i>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-title">도구 및 기타</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-docker"></i>
+                                <span>Docker</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-npm"></i>
+                                <span>npm</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-code"></i>
+                                <span>TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 연락처 섹션 -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">연락처</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>함께 프로젝트를 만들어요!</h3>
+                        <p>
+                            새로운 프로젝트, 협업 기회, 또는 단순히 인사를 전하고 싶으시다면 언제든지 연락주세요.
+                        </p>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div class="contact-details">
+                                    <h4>이메일</h4>
+                                    <a href="mailto:your.email@example.com">your.email@example.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div class="contact-details">
+                                    <h4>전화</h4>
+                                    <a href="tel:+821012345678">+82 10-1234-5678</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="contact-details">
+                                    <h4>위치</h4>
+                                    <span>서울, 대한민국</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="이름" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="이메일" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="제목">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="메시지" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">메시지 보내기</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 김진오. 모든 권리 보유.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
