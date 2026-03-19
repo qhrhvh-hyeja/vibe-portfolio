@@ -5,6 +5,18 @@
     box-sizing: border-box;
 }
 
+/* Modern Professional 컬러 팔레트 */
+:root {
+    --main-bg: #0A192F;
+    --accent-blue: #64FFDA;
+    --light-silver: #CCD6F6;
+    --slate-gray: #8892B0;
+    --white: #FFFFFF;
+    --dark-slate: #1a2332;
+    --accent-blue-light: rgba(100, 255, 218, 0.1);
+    --accent-blue-hover: #4FE8C8;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -12,8 +24,8 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+    color: var(--light-silver);
+    background-color: var(--main-bg);
     overflow-x: hidden;
 }
 
@@ -27,9 +39,9 @@ body {
 .about-subtitle {
     font-size: 1.4rem;
     font-weight: 600;
-    color: #2563eb;
+    color: var(--accent-blue);
     margin: 2rem 0 1rem 0;
-    border-left: 4px solid #2563eb;
+    border-left: 4px solid var(--accent-blue);
     padding-left: 1rem;
 }
 
@@ -41,11 +53,11 @@ body {
 }
 
 .expertise-item {
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    background: linear-gradient(135deg, var(--dark-slate) 0%, rgba(26, 35, 50, 0.8) 100%);
     padding: 2rem;
     border-radius: 12px;
-    border-left: 4px solid #2563eb;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--accent-blue);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -57,7 +69,7 @@ body {
 .expertise-item h4 {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #1e40af;
+    color: var(--light-silver);
     margin-bottom: 1rem;
 }
 
@@ -629,10 +641,10 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(10, 25, 47, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
 .nav-container {
@@ -648,13 +660,13 @@ body {
 .logo a {
     font-size: 24px;
     font-weight: 700;
-    color: #2563eb;
+    color: var(--accent-blue);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .logo a:hover {
-    color: #1d4ed8;
+    color: var(--accent-blue-hover);
 }
 
 .nav-menu {
@@ -665,14 +677,14 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #64748b;
+    color: var(--slate-gray);
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
 }
 
 .nav-link:hover {
-    color: #2563eb;
+    color: var(--accent-blue);
 }
 
 .nav-link::after {
@@ -682,7 +694,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: #2563eb;
+    background: var(--accent-blue);
     transition: width 0.3s ease;
 }
 
@@ -735,8 +747,8 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--main-bg) 0%, var(--dark-slate) 100%);
+    color: var(--white);
     margin-top: 70px;
 }
 
@@ -753,7 +765,7 @@ section {
 }
 
 .highlight {
-    color: #fbbf24;
+    color: var(--accent-blue);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -792,26 +804,26 @@ section {
 }
 
 .btn-primary {
-    background: #2563eb;
-    color: white;
-    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+    background: var(--accent-blue);
+    color: var(--main-bg);
+    box-shadow: 0 4px 15px rgba(100, 255, 218, 0.3);
 }
 
 .btn-primary:hover {
-    background: #1d4ed8;
+    background: var(--accent-blue-hover);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+    box-shadow: 0 6px 20px rgba(100, 255, 218, 0.4);
 }
 
 .btn-secondary {
     background: transparent;
-    color: white;
-    border: 2px solid white;
+    color: var(--white);
+    border: 2px solid var(--accent-blue);
 }
 
 .btn-secondary:hover {
-    background: white;
-    color: #2563eb;
+    background: var(--accent-blue);
+    color: var(--main-bg);
     transform: translateY(-2px);
 }
 
@@ -825,26 +837,26 @@ section {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
+    background: rgba(100, 255, 218, 0.1);
+    color: var(--accent-blue);
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     font-size: 20px;
     transition: all 0.3s ease;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(100, 255, 218, 0.3);
 }
 
 .social-link:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(100, 255, 218, 0.2);
     transform: translateY(-3px);
-    border-color: white;
+    border-color: var(--accent-blue);
 }
 
 /* 소개 섹션 */
 .about {
-    background: #f8fafc;
+    background: var(--dark-slate);
 }
 
 .about-content {
@@ -857,7 +869,7 @@ section {
 .about-text p {
     font-size: 16px;
     margin-bottom: 20px;
-    color: #64748b;
+    color: var(--slate-gray);
     line-height: 1.8;
 }
 
@@ -873,12 +885,12 @@ section {
 }
 
 .info-item i {
-    color: #2563eb;
+    color: var(--accent-blue);
     font-size: 18px;
 }
 
 .info-item span {
-    color: #475569;
+    color: var(--light-silver);
     font-weight: 500;
 }
 
@@ -891,18 +903,18 @@ section {
     width: 300px;
     height: 300px;
     border-radius: 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--main-bg) 0%, var(--dark-slate) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 100px;
-    color: white;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    color: var(--accent-blue);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* 프로젝트 섹션 */
 .projects {
-    background: white;
+    background: var(--main-bg);
 }
 
 .projects-grid {
@@ -912,21 +924,21 @@ section {
 }
 
 .project-card {
-    background: white;
+    background: var(--dark-slate);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .project-image {
     height: 200px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--main-bg) 0%, var(--dark-slate) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -934,7 +946,7 @@ section {
 
 .project-image .image-placeholder {
     font-size: 60px;
-    color: white;
+    color: var(--accent-blue);
 }
 
 .project-content {
@@ -945,11 +957,11 @@ section {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 15px;
-    color: #1e293b;
+    color: var(--light-silver);
 }
 
 .project-description {
-    color: #64748b;
+    color: var(--slate-gray);
     margin-bottom: 20px;
     line-height: 1.6;
 }
@@ -962,8 +974,8 @@ section {
 }
 
 .tech-tag {
-    background: #f1f5f9;
-    color: #475569;
+    background: var(--accent-blue-light);
+    color: var(--accent-blue);
     padding: 5px 12px;
     border-radius: 20px;
     font-size: 12px;
@@ -976,7 +988,7 @@ section {
 }
 
 .project-link {
-    color: #2563eb;
+    color: var(--accent-blue);
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
@@ -984,7 +996,7 @@ section {
 }
 
 .project-link:hover {
-    color: #1d4ed8;
+    color: var(--accent-blue-hover);
 }
 
 .project-link i {
@@ -999,7 +1011,7 @@ section {
 .subsection-title {
     font-size: 1.8rem;
     font-weight: 600;
-    color: #2563eb;
+    color: var(--accent-blue);
     margin: 2rem 0 1.5rem 0;
     text-align: center;
     position: relative;
@@ -1013,7 +1025,7 @@ section {
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    background: linear-gradient(90deg, #2563eb, #3b82f6);
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-blue-hover));
     border-radius: 2px;
 }
 
@@ -1025,20 +1037,20 @@ section {
 }
 
 .career-item {
-    background: white;
+    background: var(--dark-slate);
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: flex-start;
     gap: 1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-left: 4px solid #2563eb;
+    border-left: 4px solid var(--accent-blue);
 }
 
 .career-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 .career-icon {
@@ -1048,28 +1060,28 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-hover));
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 4px 15px rgba(100, 255, 218, 0.3);
 }
 
 .career-details h4 {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #1e293b;
+    color: var(--light-silver);
     margin-bottom: 0.5rem;
 }
 
 .career-duration {
     font-size: 0.95rem;
-    color: #64748b;
+    color: var(--slate-gray);
     font-weight: 500;
     margin-bottom: 0.8rem;
 }
 
 .career-description {
     font-size: 0.95rem;
-    color: #475569;
+    color: var(--slate-gray);
     line-height: 1.6;
 }
 
@@ -1079,7 +1091,7 @@ section {
 
 /* 기술 스택 섹션 */
 .skills {
-    background: #f8fafc;
+    background: var(--dark-slate);
 }
 
 .skills-grid {
@@ -1089,17 +1101,17 @@ section {
 }
 
 .skill-category {
-    background: white;
+    background: var(--main-bg);
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .skill-title {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 25px;
-    color: #1e293b;
+    color: var(--light-silver);
     text-align: center;
 }
 
@@ -1114,29 +1126,29 @@ section {
     align-items: center;
     gap: 10px;
     padding: 15px;
-    background: #f8fafc;
+    background: var(--dark-slate);
     border-radius: 10px;
     transition: all 0.3s ease;
 }
 
 .skill-item:hover {
-    background: #e2e8f0;
+    background: var(--main-bg);
     transform: translateY(-2px);
 }
 
 .skill-item i {
     font-size: 24px;
-    color: #2563eb;
+    color: var(--accent-blue);
 }
 
 .skill-item span {
     font-weight: 500;
-    color: #475569;
+    color: var(--light-silver);
 }
 
 /* 연락처 섹션 */
 .contact {
-    background: white;
+    background: var(--main-bg);
 }
 
 .contact-content {
