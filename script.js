@@ -33,15 +33,45 @@ window.addEventListener('scroll', () => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const targetId = this.getAttribute('href');
+        const target = document.querySelector(targetId);
+        
         if (target) {
-            const offsetTop = target.offsetTop - 70; // 헤더 높이만큼 오프셋
+            // 헤더 높이 계산 (동적으로)
+            const header = document.querySelector('.header');
+            const headerHeight = header ? header.offsetHeight : 70;
+            
+            const offsetTop = target.offsetTop - headerHeight - 20; // 추가 여백
+            
             window.scrollTo({
                 top: offsetTop,
                 behavior: 'smooth'
             });
+            
+            // URL 해시 업데이트
+            history.pushState(null, null, targetId);
         }
     });
+});
+
+// 페이지 로드 시 해시가 있으면 해당 위치로 스크롤
+window.addEventListener('load', () => {
+    const hash = window.location.hash;
+    if (hash) {
+        const target = document.querySelector(hash);
+        if (target) {
+            const header = document.querySelector('.header');
+            const headerHeight = header ? header.offsetHeight : 70;
+            const offsetTop = target.offsetTop - headerHeight - 20;
+            
+            setTimeout(() => {
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }, 100);
+        }
+    }
 });
 
 // 스크롤 애니메이션 (Reveal on Scroll)
