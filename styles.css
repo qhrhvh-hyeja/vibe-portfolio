@@ -5,16 +5,16 @@
     box-sizing: border-box;
 }
 
-/* Modern Professional 컬러 팔레트 */
+/* Modern Professional 컬러 팔레트 - 웜 코랄 테마 */
 :root {
-    --main-bg: #0A192F;
-    --accent-blue: #64FFDA;
-    --light-silver: #CCD6F6;
-    --slate-gray: #8892B0;
+    --main-bg: #FFF7ED;
+    --accent-blue: #FB7185;
+    --light-silver: #1F2937;
+    --slate-gray: #78716C;
     --white: #FFFFFF;
-    --dark-slate: #1a2332;
-    --accent-blue-light: rgba(100, 255, 218, 0.1);
-    --accent-blue-hover: #4FE8C8;
+    --dark-slate: #FED7AA;
+    --accent-blue-light: rgba(251, 113, 133, 0.1);
+    --accent-blue-hover: #E11D48;
 }
 
 html {
@@ -526,9 +526,9 @@ body {
 .project-image-container {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 350px;
     overflow: hidden;
-    border-radius: 12px;
+    border-radius: 20px;
 }
 
 .project-hero-image {
@@ -540,91 +540,6 @@ body {
 
 .project-card:hover .project-hero-image {
     transform: scale(1.05);
-}
-
-.project-floating-elements {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-}
-
-.project-floating-card {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 8px;
-    padding: 8px 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    animation: projectFloat 3s ease-in-out infinite;
-}
-
-.project-floating-card:nth-child(1) {
-    top: 10px;
-    right: 10px;
-    animation-delay: 0s;
-}
-
-.project-floating-card:nth-child(2) {
-    bottom: 10px;
-    left: 10px;
-    animation-delay: 1s;
-}
-
-.project-icon {
-    font-size: 16px;
-}
-
-.project-label {
-    font-size: 11px;
-    font-weight: 600;
-    color: #374151;
-}
-
-@keyframes projectFloat {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
-}
-
-/* 반응형 디자인 */
-@media (max-width: 768px) {
-    .project-floating-card {
-        transform: scale(0.9);
-    }
-    
-    .project-floating-card:nth-child(1) {
-        top: 5px;
-        right: 5px;
-    }
-    
-    .project-floating-card:nth-child(2) {
-        bottom: 5px;
-        left: 5px;
-    }
-}
-
-@media (max-width: 480px) {
-    .project-floating-card {
-        transform: scale(0.8);
-        padding: 6px 8px;
-    }
-    
-    .project-icon {
-        font-size: 14px;
-    }
-    
-    .project-label {
-        font-size: 10px;
-    }
 }
 
 /* 기존 스타일 유지 */
@@ -641,10 +556,10 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(10, 25, 47, 0.95);
+    background: rgba(255, 247, 237, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
@@ -747,8 +662,8 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, var(--main-bg) 0%, var(--dark-slate) 100%);
-    color: var(--white);
+    background: linear-gradient(135deg, #FFF7ED 0%, #FED7AA 100%);
+    color: var(--light-silver);
     margin-top: 70px;
 }
 
@@ -856,7 +771,7 @@ section {
 
 /* 소개 섹션 */
 .about {
-    background: var(--dark-slate);
+    background: #FFFFFF;
 }
 
 .about-content {
@@ -1223,7 +1138,7 @@ section {
 
 /* 기술 스택 섹션 */
 .skills {
-    background: var(--dark-slate);
+    background: #F8FAFC;
 }
 
 .skills-grid {
@@ -1280,7 +1195,7 @@ section {
 
 /* 연락처 섹션 */
 .contact {
-    background: var(--main-bg);
+    background: #FFFFFF;
 }
 
 .contact-content {
